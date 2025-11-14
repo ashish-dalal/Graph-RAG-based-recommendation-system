@@ -451,6 +451,6 @@ def plan_itinerary():
         return jsonify({"error": str(err)}), 500
 
 if __name__ == '__main__':
-    port = 5000
+    port = 5001
     print(f"Starting Flask server on port {port}")
     app.run(debug=True, port=port, host='0.0.0.0')

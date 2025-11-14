@@ -6,21 +6,29 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* margin: 1% 2.5% 0 2.5% !important; */
+  margin: 0;
   padding: 0;
-  /* background-color: white !important; */
-  background-image: url("https://i0.wp.com/digital-photography-school.com/wp-content/uploads/2023/08/landscape-photography-611.jpg?resize=1500%2C1000&ssl=1");
-  /* background-image: url("https://wallpapers.com/images/hd/majestic-4k-landscape-view-uk3ub7imf3ynqmdr.jpg"); */
- -webkit-background-size: cover;
- background-size: cover;
- background-repeat: no-repeat;
- background-position: center center;
- height: 100vh;
- width: 100%;
- display: flex;
- justify-content: center; /* Centers horizontally */
- align-items: center; 
- background-attachment: fixed
+  background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 50%, #2d2d2d 100%);
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+  position: relative;
+}
+
+body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: radial-gradient(circle at 20% 50%, rgba(212, 175, 55, 0.08) 0%, transparent 50%),
+                    radial-gradient(circle at 80% 80%, rgba(212, 175, 55, 0.06) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: 0;
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -30,6 +38,88 @@ select,
 button {
   padding: 10px;
   font-size: 16px;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #d4af37 0%, #f4d03f 100%);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #f4d03f 0%, #d4af37 100%);
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #d4af37 0%, #f4d03f 100%) !important;
+  border: none !important;
+  border-radius: 10px !important;
+  padding: 12px 28px !important;
+  font-weight: 600 !important;
+  font-size: 1rem !important;
+  letter-spacing: 0.5px !important;
+  box-shadow: 0 4px 20px rgba(212, 175, 55, 0.4) !important;
+  transition: all 0.3s ease !important;
+  text-transform: uppercase;
+  font-size: 0.9rem !important;
+  color: #000 !important;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #f4d03f 0%, #d4af37 100%) !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 6px 25px rgba(212, 175, 55, 0.6) !important;
+}
+
+.btn-primary:active {
+  transform: translateY(0px) !important;
+  box-shadow: 0 2px 15px rgba(212, 175, 55, 0.4) !important;
+}
+
+.btn-outline-primary {
+  color: #d4af37 !important;
+  border: 2px solid #d4af37 !important;
+  border-radius: 10px !important;
+  padding: 10px 26px !important;
+  font-weight: 600 !important;
+  background-color: transparent !important;
+  transition: all 0.3s ease !important;
+  text-transform: uppercase;
+  font-size: 0.9rem !important;
+  letter-spacing: 0.5px !important;
+}
+
+.btn-outline-primary:hover {
+  background: linear-gradient(135deg, #d4af37 0%, #f4d03f 100%) !important;
+  border-color: #d4af37 !important;
+  color: #000 !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 4px 20px rgba(212, 175, 55, 0.4) !important;
+}
+
+.btn-secondary {
+  background-color: rgba(45, 45, 45, 0.9) !important;
+  border: 1px solid rgba(212, 175, 55, 0.3) !important;
+  border-radius: 10px !important;
+  padding: 10px 20px !important;
+  transition: all 0.3s ease !important;
+  color: #fff !important;
+}
+
+.btn-secondary:hover {
+  background-color: rgba(60, 60, 60, 1) !important;
+  border-color: rgba(212, 175, 55, 0.5) !important;
+  transform: translateY(-1px) !important;
+  box-shadow: 0 2px 10px rgba(212, 175, 55, 0.2) !important;
 }
 
 

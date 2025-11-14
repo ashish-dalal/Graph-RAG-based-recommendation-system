@@ -1,8 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
-import './TextBox.css'; // Add styles as needed
+import './TextBox.css';
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-import FlexCards from "../flexCards/FlexCards";
 
 const TextBox = ({ updateUserData }) => {
   const [existing_destinations, setExistingDestinations] = useState([]);
@@ -25,7 +24,7 @@ const TextBox = ({ updateUserData }) => {
   useEffect(() => {
     const fetchDestinations = async () => {
       try {
-        const response = await fetch("http://localhost:5000/api/places");
+        const response = await fetch("http://localhost:5001/api/places");
         const destinations = await response.json();
         console.log("Fetched destinations:", destinations);
         setExistingDestinations(destinations);
@@ -116,10 +115,6 @@ const TextBox = ({ updateUserData }) => {
     setShowDropdown(false);
   };
 
-  const parentWidth = window.innerWidth * 0.3;
-  const parentHeight = window.innerHeight * 0.9;
-
-  // Get today's date for date picker min date
   const today = new Date();
 
   return (
@@ -250,9 +245,41 @@ const TextBox = ({ updateUserData }) => {
         </div>
       </div>
       <div className="form-hero">
-        <pre>Don't Have any destination in mind?
-          Let us help you find the best!!</pre>
-        <FlexCards parentWidth={parentWidth} parentHeight={parentHeight} />
+        <div className="hero-content">
+          <h3 className="hero-label">Popular Destinations</h3>
+          <div className="destination-cards">
+            <div className="destination-card">
+              <div className="card-image" style={{backgroundImage: "url('https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=400')"}}></div>
+              <div className="card-content">
+                <div className="card-header">
+                  <h4>Seoul, Korea</h4>
+                  <span className="rating">★ 4.8</span>
+                </div>
+                <p className="card-description">Modern city with rich culture and amazing food scenes</p>
+              </div>
+            </div>
+            <div className="destination-card">
+              <div className="card-image" style={{backgroundImage: "url('https://images.unsplash.com/photo-1564507592333-c60657eea523?w=400')"}}></div>
+              <div className="card-content">
+                <div className="card-header">
+                  <h4>Taj Mahal, India</h4>
+                  <span className="rating">★ 4.9</span>
+                </div>
+                <p className="card-description">Iconic monument of love and architectural masterpiece</p>
+              </div>
+            </div>
+            <div className="destination-card">
+              <div className="card-image" style={{backgroundImage: "url('https://images.unsplash.com/photo-1506929562872-bb421503ef21?w=400')"}}></div>
+              <div className="card-content">
+                <div className="card-header">
+                  <h4>Santorini, Greece</h4>
+                  <span className="rating">★ 4.9</span>
+                </div>
+                <p className="card-description">Beautiful island with stunning sunsets and architecture</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

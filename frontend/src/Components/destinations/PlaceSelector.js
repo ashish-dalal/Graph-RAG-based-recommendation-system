@@ -22,7 +22,7 @@ const PlaceSelector = () => {
     useEffect(() => {
         const loadLocations = async (data) => {
             try {
-                const resp = await fetch('http://localhost:5000/api/top-places', {
+                const resp = await fetch('http://localhost:5001/api/top-places', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
@@ -104,13 +104,13 @@ const PlaceSelector = () => {
                 <div className="container-fluid">
                     <div className="navbar-brand logo">
                         <img
-                            src="/images/logo_main.png"
+                            src="/images/logo_graph.svg"
                             alt="Logo"
                             className="logo-img"
                         />
                     </div>
                     <div className="title">
-                        <p>Your Personal Travel Guide</p>
+                        <p>Graph-Powered Recommendations</p>
                     </div>
 
                     <div className="d-flex align-items-center">

@@ -6,13 +6,13 @@ const Header = () => {
       <div className="container-fluid">
         <div className="navbar-brand logo">
           <img
-            src="/images/logo_main.png"
+            src="/images/logo_graph.svg"
             alt="Logo"
             className="logo-img"
           />
         </div>
         <div className="title">
-          <p>Your Personal Travel Guide</p>
+          <p>Graph-Powered Recommendations</p>
         </div>
 
         <div className="d-flex align-items-center">

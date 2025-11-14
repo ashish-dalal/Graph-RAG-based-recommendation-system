@@ -34,7 +34,7 @@ const ItineraryPlanner = () => {
 
     const loadSchedule = async () => {
       try {
-        const resp = await fetch("http://localhost:5000/api/event-planner", {
+        const resp = await fetch("http://localhost:5001/api/event-planner", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -67,13 +67,13 @@ const ItineraryPlanner = () => {
         <div className="container-fluid">
           <div className="navbar-brand logo">
             <img
-              src="/images/logo_main.png"
+              src="/images/logo_graph.svg"
               alt="Logo"
               className="logo-img"
             />
           </div>
           <div className="title">
-            <p>Your Personal Travel Guide</p>
+            <p>Graph-Powered Recommendations</p>
           </div>
 
           <div className="d-flex align-items-center">
