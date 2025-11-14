@@ -1,0 +1,36 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap'); */
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* margin: 1% 2.5% 0 2.5% !important; */
+  padding: 0;
+  /* background-color: white !important; */
+  background-image: url("https://i0.wp.com/digital-photography-school.com/wp-content/uploads/2023/08/landscape-photography-611.jpg?resize=1500%2C1000&ssl=1");
+  /* background-image: url("https://wallpapers.com/images/hd/majestic-4k-landscape-view-uk3ub7imf3ynqmdr.jpg"); */
+ -webkit-background-size: cover;
+ background-size: cover;
+ background-repeat: no-repeat;
+ background-position: center center;
+ height: 100vh;
+ width: 100%;
+ display: flex;
+ justify-content: center; /* Centers horizontally */
+ align-items: center; 
+ background-attachment: fixed
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+select,
+button {
+  padding: 10px;
+  font-size: 16px;
+}
+
+
+

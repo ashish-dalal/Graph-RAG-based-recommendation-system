@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: arial;
+  h1 {
+      font-size: 70px;
+      text-transform: uppercase;
+      margin: 0;
+  }
+}
+
+
+.banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+  max-height: 90%;
+  width: 90%;
+  padding: 0px;
+  text-align: center;
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  font-weight: bold;
+  border-style: solid;
+  border-width: 2px ;
+  border-color: rgb(61, 60, 60);
+  backdrop-filter: blur(10px); /* Blur content behind the card */
+}
+
+banner-text p {
+  padding: 0 8%;
+  font-family: me;
+}
+  
+  .nav-item{
+    background-color: none;
+    justify-items: center;
+    align-items: center;
+  }
+  .nav-link {
+    background-color: #FF8E8F;
+    border-radius: 5%;
+    }
+  /* Content Box */
+  .content-box {
+    padding: 20px;
+  }
+  .input-field {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+
+

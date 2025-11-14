@@ -1,0 +1,65 @@
+.style-container {
+    width: 100%;
+}
+
+.custom-header-places {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0px;
+    padding: 0px 0px;
+    margin-top: 0%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.container-fluid {
+    padding: 0px;
+    margin: 0px;
+    width: 100vw;
+}
+
+.places-list {
+    top:0px;
+    margin-top: 10vh;
+    height: 88vh;
+    overflow-y: auto;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.event-planner-section {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .event-planner-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: #e8b638;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .event-planner-btn.disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  .rating {
+    display: flex;
+  }
+  .rating p{
+    padding-right: 10px;
+  }
+  .star {
+    font-size: 50px;
+    color: gold;
+  }

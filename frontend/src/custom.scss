@@ -1,0 +1,7 @@
+// custom.scss to override bootstrap variables
+$primary: #eb8525;       // Custom primary color (green)
+// $secondary: #ff5722;     // Custom secondary color (orange)
+// $success: #8bc34a;       // Custom success color (light green)
+// $danger: #f44336;        // Custom danger color (red)
+
+@import "bootstrap/scss/bootstrap";

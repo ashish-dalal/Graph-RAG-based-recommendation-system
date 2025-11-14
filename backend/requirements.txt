@@ -1,0 +1,12 @@
+nx-arangodb 
+networkx==3.4
+pandas 
+matplotlib 
+python-dotenv 
+flask 
+flask-cors
+langchain 
+langchain-community 
+langchain_openai
+langgraph
+gunicorn

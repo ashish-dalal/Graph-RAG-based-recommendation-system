@@ -1,0 +1,39 @@
+.custom-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 0px;
+    margin-bottom: 15px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  .container-fluid{
+    padding: 0px;
+    margin: 0px;
+  }
+  .logo-img {
+    height: 60px;
+    margin: 0px;
+    padding: 10px;
+    opacity: 1;
+  }
+  
+  .title {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: #ececec;
+    font-size: 40px !important;
+    font-weight:900;
+    padding: 10px;
+    margin: 0px;
+  }
+  
+  .dropdown-menu {
+    min-width: 100px;
+  }
+  .navbar-brand {
+    padding: 0px;
+    margin: 0px;
+    opacity: 1;
+  }

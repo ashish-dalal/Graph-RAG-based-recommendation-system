@@ -1,0 +1,75 @@
+/* Card.css */
+.card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  height: 430px; /* Fixed height */
+  overflow: hidden;
+  text-align: left;
+}
+
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  margin: 0 0 10px;
+  font-size: 1.2rem;
+}
+
+.card p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.card-content {
+  padding: 10px;
+}
+
+.desc {
+  height: 100px;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+
+.select-place {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.select-place input {
+  margin-right: 8px;
+}
+.rating {
+  display: flex;
+}
+.rating p{
+  padding-right: 10px;
+}
+.star {
+  font-size: 50px;
+  color: gold;
+}
+
+.details-button{
+  background-color: #fff;
+  border: 2px solid gold;
+  color: black;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
